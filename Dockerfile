@@ -84,10 +84,10 @@ RUN set -eux; \
         --enable-xml \
         --enable-xmlreader \
         --enable-xmlwriter \
-        --enable-openssl \
         --enable-zlib \
         --with-config-file-path="$PHP_INI_DIR" \
         --with-config-file-scan-dir="$PHP_INI_DIR/conf.d" \
+        --with-openssl \
         --with-sodium=shared \
         \
         $(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') \

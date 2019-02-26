@@ -24,7 +24,7 @@ RUN apt-get update; \
     rm -rf /var/lib/apt/lists/*; \
     mkdir -p /usr/src; \
     cd /usr/src; \
-    wget -O php.zip https://codeload.github.com/php/php-src/zip/master; \
+    wget -O php.zip https://codeload.github.com/php/php-src/zip/PHP-7.4; \
     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false wget dirmngr;
 
 RUN set -eux; \

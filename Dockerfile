@@ -57,7 +57,7 @@ RUN set -eux; \
     ; \
     mkdir -p /usr/src/php/; \
     unzip /usr/src/php.zip -d /usr/src/php; \
-    cd /usr/src/php/php-src-master; \
+    cd /usr/src/php/php-src-*; \
     gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; \
     debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; \
     if [ ! -d /usr/include/curl ]; then \
